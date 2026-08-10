@@ -1,0 +1,25 @@
+{
+    "platform_goal": {
+        "id": "platform.platform_goal",
+        "name": "平台核心目标与产品边界",
+        "core_goal": "通过考试",
+        "description": "定义软考AI平台最高且不可被用户个体目标、知识背景、学习偏好或其他产品能力改变的核心目标，以及为防止产品定位漂移而设定的边界。",
+        "exclusions": [
+            {
+                "id": "no_deep_technical_training",
+                "name": "不扩展为深层技术培训",
+                "description": "技术知识的讲解和扩展仅服务于理解软考内容、建立考试所需认知和应对真实考试，不以培养软件开发、架构、AI、云计算等专项技术应用能力为目标。"
+            },
+            {
+                "id": "no_textbook_equivalence",
+                "name": "不以教材掌握替代考试目标",
+                "description": "教材是重要学习依据，但不是考试内容的完整边界。不得将完整理解或记忆教材等同于已经具备通过真实考试的能力。"
+            },
+            {
+                "id": "no_unbounded_external_expansion",
+                "name": "不无限扩展教材外知识",
+                "description": "不得为了覆盖不可预测的考试内容而无限扩展技术、政策、行业或其他教材外知识。教材外内容的引入必须服务于软考理解或真实考试应对。"
+            }
+        ]
+    }
+}

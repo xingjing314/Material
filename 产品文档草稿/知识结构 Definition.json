@@ -1,0 +1,79 @@
+{
+    "information_knowledge_structure": {
+        "id": "dimension.information_knowledge_structure",
+        "name": "信息化知识结构",
+        "description": "信息化知识结构用于描述用户当前已经具备的信息化相关知识、经验和专业基础，以及这些已有知识在不同知识领域中的分布形态。该维度只描述用户“已经有什么”，不以某一具体软考科目为参照定义用户“缺什么”。用户相对于具体考试所缺少的知识，应由用户信息化知识结构与对应课程或考试知识要求进行映射后得到。信息化知识结构不直接描述用户总体认知层次、学习能力或考试能力。",
+        "knowledge_domains": [
+            {
+                "id": "knowledge.basic_digital_informatization",
+                "name": "基础数字与信息化常识",
+                "description": "描述用户已经具备的基础数字化和信息化常识，包括计算机、手机、软件、硬件、浏览器、文件、磁盘、基础网络、常见办公软件以及常见业务系统等基础认知。该知识域只描述用户已有基础，不表示平台需要按照完整计算机基础课程进行补充教学。"
+            },
+            {
+                "id": "knowledge.business_information_system",
+                "name": "业务与信息系统",
+                "description": "描述用户对业务活动与信息系统之间关系的已有知识和经验，包括业务流程、业务需求、企业应用系统、用户与角色、权限、系统功能以及信息系统如何支撑实际业务等内容。"
+            },
+            {
+                "id": "knowledge.requirement_system_analysis",
+                "name": "需求分析与系统分析",
+                "description": "描述用户在需求获取、需求分析、业务分析、功能分析、系统建模、可行性分析以及系统分析方法等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.software_development",
+                "name": "软件开发",
+                "description": "描述用户在编程语言、开发框架、接口与API、软件设计、软件测试、版本控制、软件工程实践以及开发流程等方面已经具备的知识和实践经验。"
+            },
+            {
+                "id": "knowledge.system_architecture",
+                "name": "系统架构",
+                "description": "描述用户在系统架构思想、架构模式、分层、分布式系统、微服务、高可用、可扩展性、性能、架构权衡以及系统集成等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.data_management",
+                "name": "数据与数据管理",
+                "description": "描述用户在数据库、数据建模、数据存储、数据治理、数据仓库、数据湖、数据质量、主数据以及数据生命周期等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.network_infrastructure",
+                "name": "网络与基础设施",
+                "description": "描述用户在计算机网络、服务器、存储、机房、虚拟化、云计算、容器基础设施、计算资源以及基础设施规划等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.information_security",
+                "name": "信息安全",
+                "description": "描述用户在网络安全、数据安全、应用安全、身份认证、权限控制、安全风险、等级保护、安全治理以及新技术安全问题等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.operations_service_management",
+                "name": "运维与服务管理",
+                "description": "描述用户在系统运维、监控、故障处理、变更管理、配置管理、服务管理、服务级别管理、DevOps相关运维实践以及持续运营等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.project_management",
+                "name": "项目管理",
+                "description": "描述用户在项目范围、进度、成本、质量、风险、资源、沟通、采购、干系人以及项目生命周期等项目管理领域已经具备的知识和实践经验。"
+            },
+            {
+                "id": "knowledge.informatization_planning_governance",
+                "name": "信息化规划与治理",
+                "description": "描述用户在信息化战略、信息化规划、IT规划、企业信息化体系、投资规划、信息化治理、IT治理、能力规划以及资源规划等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.system_lifecycle_engineering_management",
+                "name": "系统建设生命周期与工程管理",
+                "description": "描述用户在信息系统立项、可行性研究、设计、建设、实施、测试、验收、交付、运行、维护、退役以及整个系统建设生命周期管理等方面已经具备的知识和经验。"
+            },
+            {
+                "id": "knowledge.implementation_supervision_procurement",
+                "name": "工程实施、监理与采购",
+                "description": "描述用户在信息化工程实施、项目监督、质量控制、合同管理、招投标、采购、验收、信息系统监理以及相关工程文档等方面已经具备的知识和实践经验。"
+            },
+            {
+                "id": "knowledge.policy_regulation_standard_industry",
+                "name": "政策、法律法规、标准与行业发展",
+                "description": "描述用户在国家政策、信息化政策、法律法规、国家标准、行业标准、产业发展、行业趋势以及技术发展趋势等宏观外部知识方面已经具备的认知和经验。"
+            }
+        ]
+    }
+}
