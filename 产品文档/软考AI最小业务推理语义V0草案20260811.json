@@ -1,0 +1,33 @@
+{
+    "definitions": [
+        {
+            "reasoning_frame": {
+                "id": "reasoning.reasoning_frame",
+                "name": "推理框架",
+                "description": "Reasoning Frame（推理框架）用于描述AI理解和判断一个Current Question时所处的最小业务语义环境。当前V0由Platform Goal、User Current State、Exam / Course Required State和Evidence共同构成。其中Platform Goal提供软考AI的最高产品方向和边界；User Current State描述当前用户的参与动机、组织环境、信息化认知成熟度、信息化知识结构、学习/认知特征和资源约束；Exam / Course Required State描述针对当前考试、课程、知识点或题型，为达到考试目标所需要具备的状态；Evidence表示AI进行当前业务判断时可以依据的事实、材料、观察结果或可靠信息来源。各组成因素承担不同业务语义角色，不表示线性权重、数值优先级或固定处理顺序。Current Question始终是当前任务中心，Reasoning Frame中的其他对象用于限定、解释、校正和约束AI对当前问题的理解与回答，而不是替代Current Question。该定义描述业务推理语义环境，不定义模型真实内部思维过程、Chain-of-Thought、Runtime流程、Agent编排或具体技术实现。",
+                "sub_definition": [
+                    "Platform_Goal",
+                    "User Current State",
+                    "Exam Required State",
+                    "Course Required State",
+                    "Evidence"
+                ]
+            }
+        },
+        {
+            "reasoning_path": {
+                "id": "reasoning.reasoning_path",
+                "name": "推理路径",
+                "description": "Reasoning Path（推理路径）用于描述AI在Reasoning Frame约束下，从Current Question形成与当前任务相关的业务判断，并最终形成回答策略和Answer的最小语义路径。当前V0表达为：Current Question + Reasoning Frame → Relevant Gap / Barrier → Strategy → Answer。Current Question始终是当前任务中心；Reasoning Frame用于为当前问题提供业务语义环境；Relevant Gap / Barrier表示与当前问题和考试目标直接相关的差距、障碍或限制；Strategy表示AI基于当前问题、推理框架及相关Gap / Barrier形成的回答策略；Answer表示在这些业务语义和策略约束下形成的最终用户可见回答。当前V0中的Relevant Gap / Barrier不等同于完整Formal Gap，因为Exam / Course Required State尚未正式建模。该路径描述的是希望AI遵守的业务推理方式和可追溯语义，不表示模型内部必须按照固定步骤思考，也不等同于程序执行Chain、LangGraph Graph、Agent Workflow或其他Runtime顺序。",
+                "sub_definition": [
+                    "Current Question",
+                    "Reasoning Frame",
+                    "Relevant Gap",
+                    "Relevant Barrier",
+                    "Strategy",
+                    "Answer"
+                ]
+            }
+        }
+    ]
+}
